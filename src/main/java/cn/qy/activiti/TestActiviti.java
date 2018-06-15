@@ -3,7 +3,10 @@ package cn.qy.activiti;
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngineConfiguration;
 import org.activiti.engine.ProcessEngines;
+import org.activiti.engine.RepositoryService;
+import org.activiti.engine.test.Deployment;
 import org.junit.Test;
+import org.springframework.stereotype.Repository;
 
 //创建流程引擎
 public class TestActiviti {
@@ -29,5 +32,11 @@ public class TestActiviti {
 //        System.out.println("success");
 
     }
-    
+    @Test
+    public void deploy(){
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+        RepositoryService repositoryService = processEngine.getRepositoryService();
+       org.activiti.engine.repository.Deployment deployment = repositoryService.createDeployment().addClasspathResource("diagram/leave.bpmn").addClasspathResource("diagram/leave.png").name("leaveProcess").category("OA").deploy();
+        System.out.println(deployment.getId()+ "   " + deployment.getName());
+    }
 }
