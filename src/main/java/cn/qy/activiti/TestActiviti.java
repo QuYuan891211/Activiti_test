@@ -50,14 +50,26 @@ public class TestActiviti {
         System.out.println(processInstance.getId()+ "   " + processInstance.getProcessDefinitionId());
     }
 @Test
-    public void queryProcess(){
-        String assignee = "lc";
+    public void queryProcess() {
+    String assignee = "cx";
+    ProcessEngine processEngine = createProcessEngine();
+    TaskService taskService = processEngine.getTaskService();
+    TaskQuery taskQuery = taskService.createTaskQuery();
+    List<Task> list = taskQuery.taskAssignee(assignee).list();
+    for (Task task : list) {
+        System.out.println(task.getAssignee() + "    " + task.getName() + "   " + task.getId());
+    }
+}
+        @Test
+        public void completeTask(){
         ProcessEngine processEngine = createProcessEngine();
         TaskService taskService = processEngine.getTaskService();
-        TaskQuery taskQuery = taskService.createTaskQuery();
-        List<Task> list = taskQuery.taskAssignee(assignee).list();
-        for(Task task:list){
-            System.out.println(task.getAssignee() + "    " + task.getName() + "   " + task.getId());
-        }
+        taskService.complete("204");
+        System.out.println("complete");
     }
+
+        public void endTask(){
+            
+        }
+
 }
