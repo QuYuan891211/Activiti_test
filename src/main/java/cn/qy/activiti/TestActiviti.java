@@ -20,13 +20,14 @@ public class TestActiviti {
 //        System.out.println("success");
 
         //2.方式二通过配置文件创建
-//        ProcessEngineConfiguration processEngineConfiguration = ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti.cfg.xml");
-//        processEngineConfiguration.buildProcessEngine();
-//        System.out.println("success");
+        ProcessEngineConfiguration processEngineConfiguration = ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("activiti.cfg.xml");
+        processEngineConfiguration.buildProcessEngine();
+        System.out.println("success");
 
         //3. 方式三获取默认引擎
-        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
-
+//        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+//        System.out.println("success");
 
     }
+    
 }

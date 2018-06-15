@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8735d7e-5aa9-4fab-b3cc-ed7cf962eb11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/activiti.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/qy/activiti/TestActiviti.java" afterPath="$PROJECT_DIR$/src/main/java/cn/qy/activiti/TestActiviti.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,7 +21,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/cn/qy/activiti/TestActiviti.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="492">
-                  <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+                  <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -328,7 +326,7 @@
       <option name="presentableId" value="Default" />
       <updated>1528975063193</updated>
       <workItem from="1528975069462" duration="4223000" />
-      <workItem from="1529031499450" duration="5206000" />
+      <workItem from="1529031499450" duration="5547000" />
     </task>
     <servers />
   </component>
@@ -344,7 +342,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9429000" />
+    <option name="totallyTimeSpent" value="9770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -453,7 +451,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/qy/activiti/TestActiviti.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
