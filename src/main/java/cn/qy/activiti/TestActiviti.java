@@ -69,7 +69,7 @@ public class TestActiviti {
     }
 
         public void endTask(){
-            
+
         }
 
 }
